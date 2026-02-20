@@ -100,6 +100,8 @@ class Yatzy:
                 sum = sum + 6
         return sum
     
+
+    #Yo corregi este metodo
     @staticmethod
     def score_pair( d1,  d2,  d3,  d4,  d5):
         counts = [0]*6
@@ -110,7 +112,7 @@ class Yatzy:
         counts[d5-1] += 1
         at = 0
         for at in range(6):
-            if (counts[6-at-1] == 2):
+            if (counts[6-at-1] >= 2):
                 return (6-at)*2
         return 0
     
